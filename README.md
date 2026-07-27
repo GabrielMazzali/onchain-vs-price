@@ -1,4 +1,5 @@
-# Can on-chain metrics predict Bitcoin and Cardano prices?
+# Can On-Chain Analysis Predict Bitcoin and Cardano Returns?
+
 
 A research codebase (undergraduate research / iniciação científica, XP Educação — Bacharelado em Ciência de Dados) testing whether **on-chain metrics** carry a directional trading edge for **Bitcoin (BTC)** and **Cardano (ADA)** at daily frequency, over and above what you can already get from **price alone**.
 
