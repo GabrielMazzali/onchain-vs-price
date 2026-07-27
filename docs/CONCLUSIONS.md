@@ -150,7 +150,7 @@ negative result is trustworthy precisely *because* every naive positive was expl
 ## What's next (optional, for completeness)
 
 1. **Label redo** (triple-barrier / sign-of-return) — rule out that the fixed label
-   hid a signal. Expectation: low, but closes the loop for the TCC.
+   hid a signal. Expectation: low, but closes the loop for the research.
 2. **ADA staking leak audit** (Phase 3.3) — before trusting any ADA on-chain feature.
 3. **Momentum backtest** (optional) — turn the one real effect (BTC momentum) into a
    "tradeable or not, after fees?" answer.

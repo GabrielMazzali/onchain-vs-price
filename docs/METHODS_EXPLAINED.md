@@ -2,7 +2,7 @@
 
 A friendly, no-jargon guide to every statistical method used in this project
 (Phase 0, the ablation, and the model-free signal detection). Written to be read
-before a TCC defense: if a professor asks *"what is a Newey-West correction and
+before a research defense: if a professor asks *"what is a Newey-West correction and
 why did you use it?"*, the answer is here.
 
 Each method follows the same little structure: **what it is · why we used it ·
@@ -201,7 +201,7 @@ for — that's the interesting part.**
   overlap/autocorrelation and deflates the fake confidence.
 - **Found:** ~60% of the "significant" findings evaporated after the fix; what
   remained was weak and price-based anyway.
-- **Thesis lesson:** *never trust a naive p-value on overlapping forward returns.*
+- **Key lesson:** *never trust a naive p-value on overlapping forward returns.*
 
 ### Test 2 — Granger causality (the strictest, cleanest test)
 - **What:** *does the past of the on-chain metric help predict tomorrow's return

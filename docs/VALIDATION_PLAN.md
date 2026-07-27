@@ -1,7 +1,8 @@
 # Validation Plan — can on-chain metrics predict BTC/ADA price?
 
-> Phased research plan and process record for the TCC (XP Educação, Bacharelado em
-> Ciência de Dados). For the statistical methods referenced here, see
+> Phased research plan and process record for the undergraduate research /
+> iniciação científica (XP Educação, Bacharelado em Ciência de Dados). For the
+> statistical methods referenced here, see
 > `METHODS_EXPLAINED.md`; for the final synthesis, see `CONCLUSIONS.md`.
 
 ## The question

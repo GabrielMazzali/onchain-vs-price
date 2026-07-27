@@ -55,7 +55,7 @@ IC/
 ├── docs/                            ← all research narrative & results (see below)
 │   ├── CONCLUSIONS.md               ← START HERE: the answer, plain, with the evidence chain
 │   ├── VALIDATION_PLAN.md           ← phased plan / process tracker
-│   ├── METHODS_EXPLAINED.md         ← plain-language guide to every stat method + feature data dictionary (TCC/defense aid)
+│   ├── METHODS_EXPLAINED.md         ← plain-language guide to every stat method + feature data dictionary (research/defense aid)
 │   ├── CONFOUNDS.md                 ← the 6 traps that fake on-chain signal (incl. the DL persistence illusion) + fixes
 │   ├── LSTM_EXPLAINED.md            ← beginner-friendly guide to the DL stage (LSTM architecture, choices, Poutyne)
 │   └── results/                     ← PHASE0 / ABLATION / SIGNAL_DETECTION / VOLATILITY / CYCLE_TIMING / REGIME_EVENT _RESULTS.md

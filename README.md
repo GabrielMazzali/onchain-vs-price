@@ -1,6 +1,6 @@
 # Can on-chain metrics predict Bitcoin and Cardano prices?
 
-A research codebase (undergraduate thesis / TCC, XP Educação — Bacharelado em Ciência de Dados) testing whether **on-chain metrics** carry a directional trading edge for **Bitcoin (BTC)** and **Cardano (ADA)** at daily frequency, over and above what you can already get from **price alone**.
+A research codebase (undergraduate research / iniciação científica, XP Educação — Bacharelado em Ciência de Dados) testing whether **on-chain metrics** carry a directional trading edge for **Bitcoin (BTC)** and **Cardano (ADA)** at daily frequency, over and above what you can already get from **price alone**.
 
 > **The answer is no.** Over 2020-01-01 → 2026-06-01, on-chain metrics show no detectable incremental directional signal for BTC/ADA; the only real (but small, untradeable-as-tested) effect is price momentum. The full, plain-language answer with the evidence chain is in **[`docs/CONCLUSIONS.md`](docs/CONCLUSIONS.md)** — start there.
 
@@ -78,6 +78,20 @@ Each analysis is a standalone script under `utils/` that regenerates a results f
 
 `1_data_loader` pulls Coin Metrics (community endpoint, no key) into `data/raw/`, adds ADA staking from Blockfrost, then calls `engineer_features` + `save_engineered`. The model notebooks and analysis scripts call `load_engineered_frames`, which rebuilds the engineered CSV/Parquet from raw if the cache is missing. Canonical paths (`RAW_DIR`, `ENG_DIR`) live in `src/feature_engineering.py` — never duplicate them in a notebook.
 
+```mermaid
+flowchart TD
+    CM["Coin Metrics<br/>(no key)"] --> LOADER["1_data_loader.ipynb"]
+    BF["Blockfrost<br/>(ADA staking, .env)"] --> LOADER
+    LOADER --> RAW[("data/raw/*.csv")]
+    RAW --> FE["engineer_features()"]
+    FE --> ENG[("data/engineered/*<br/>(gitignored, auto-rebuilt)")]
+    ENG --> MODELS["Supervised models<br/>2a LR · 2b XGBoost · 4 LSTM"]
+    ENG --> ANALYSES["Model-free analyses<br/>utils/*.py"]
+    MODELS --> RESULTS[("docs/results/*.md<br/>+ data/*.csv")]
+    ANALYSES --> RESULTS
+    RESULTS --> CONC["docs/CONCLUSIONS.md<br/>→ no edge over price"]
+```
+
 ## Anti-leakage protocol
 
 The model notebooks enforce three rules (`src/feature_engineering.py` is intentionally scaler-free):
@@ -110,4 +124,4 @@ This repository is dual-licensed:
 - **Code** (the `.py` files, notebook code cells, scripts) — **MIT**, see [`LICENSE`](LICENSE). Free to use, modify, and redistribute, keeping the copyright notice.
 - **Research & written materials** (`docs/`, this README, results tables, notebook narrative, figures) — **CC BY 4.0**, see [`LICENSE-docs`](LICENSE-docs). Free to reuse and adapt **with attribution**.
 
-If you use the findings or methodology, please cite: *Gabriel Mazzali Garcia (2026), "Can on-chain metrics predict Bitcoin and Cardano prices?", undergraduate thesis (TCC), XP Educação.*
+If you use the findings or methodology, please cite: *Gabriel Mazzali Garcia (2026), "Can on-chain metrics predict Bitcoin and Cardano prices?", undergraduate research (iniciação científica), XP Educação.*
