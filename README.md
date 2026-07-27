@@ -6,6 +6,8 @@ A research codebase (undergraduate research / iniciação científica, XP Educa�
 
 This is a **rigorous negative result** backed by supervised models, a controlled ablation, model-free statistical tests, and a deep-learning capacity check — plus a reusable **methodology for evaluating crypto predictive claims** (see [`docs/CONFOUNDS.md`](docs/CONFOUNDS.md)).
 
+📄 **The full written report:** [`Research_OnChainVsPrice_BTC-ADA.pdf`](Research_OnChainVsPrice_BTC-ADA.pdf).
+
 There is no packaged application; the deliverables are notebooks, CSV/Parquet artifacts, and the write-ups under `docs/`.
 
 ---
