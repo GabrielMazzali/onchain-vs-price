@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this work or its findings, please cite it as below."
+title: "Can on-chain metrics predict Bitcoin and Cardano prices?"
+abstract: >-
+  A rigorous negative result: over 2020-2026 daily data, on-chain metrics carry
+  no detectable incremental directional trading edge for BTC/ADA beyond price
+  alone. Includes a controlled ablation, model-free statistical tests, a
+  deep-learning capacity check, and a reusable methodology for evaluating crypto
+  predictive claims.
+type: software
+authors:
+  - given-names: Gabriel
+    family-names: Mazzali Garcia
+    email: gabrielmazzali.garcia@gmail.com
+year: 2026
+license: MIT
+keywords:
+  - bitcoin
+  - cardano
+  - on-chain-metrics
+  - machine-learning
+  - walk-forward-validation
+preferred-citation:
+  type: thesis
+  title: "Can on-chain metrics predict Bitcoin and Cardano prices?"
+  authors:
+    - given-names: Gabriel
+      family-names: Mazzali Garcia
+  year: 2026
+  institution:
+    name: "XP Educação — Bacharelado em Ciência de Dados"
+  thesis-type: "Undergraduate thesis (TCC)"

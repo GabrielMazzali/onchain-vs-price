@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+
+# Feature-engineered cache (CSV / Parquet from pipeline)
+data/engineered/
+
+# Python bytecode
+__pycache__/
+
+# Secrets
+.env
+
+# Local Claude Code settings (machine-specific paths + permission grants)
+.claude/
+
+# Report deliverables — distributed via GitHub Releases, not tracked in-tree
+TCC_OnChain_Report.docx
+TCC_Checkpoint_OnChain.pptx
+
+# Good practices to ignore: ------------------------------------------------------------------------------------------------
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS clutter
+.DS_Store
+
+# Notebook copies
+* copy.ipynb
+# ------------------------------------------------------------------------------------------------------------------------
