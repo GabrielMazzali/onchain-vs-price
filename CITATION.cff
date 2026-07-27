@@ -8,6 +8,7 @@ abstract: >-
   deep-learning capacity check, and a reusable methodology for evaluating crypto
   predictive claims.
 type: software
+repository-code: "https://github.com/GabrielMazzali/onchain-vs-price"
 authors:
   - given-names: Gabriel
     family-names: Mazzali Garcia
